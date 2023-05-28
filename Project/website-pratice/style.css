@@ -1,0 +1,88 @@
+/* element selector */
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  /* background-image: url("../images/tommy-tsao-TZldfnLPZ3Q-unsplash.jpg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: antiquewhite;
+  /* background: ; */
+}
+a {
+  padding: 0.5rem;
+}
+p {
+  font-size: 20px;
+  font-weight: 200;
+  text-indent: 2rem;
+}
+table,
+tr,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+h1 {
+  color: red;
+  background-color: rgb(31, 35, 35);
+}
+
+/* id selector */
+#id-selector {
+  color: rgb(82, 38, 159);
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+/* class selector */
+.title {
+  font-size: 48px;
+  text-align: center;
+}
+.class-selector {
+  color: rgb(239, 27, 70);
+  line-height: 36px;
+  letter-spacing: 2px;
+}
+.color-text {
+  color: blueviolet;
+}
+.large-text {
+  font-size: 36px;
+}
+
+/* grouping selector */
+ul,
+ol {
+  color: rgb(208, 117, 7);
+}
+
+/* descendant selector */
+div.link2 a {
+  font-size: 36px;
+  color: blue;
+}
+
+div.link3 a {
+  font-size: 36px;
+  color: red;
+}
+
+/* attribe selector */
+textarea[type="text"] {
+  color: coral;
+  font-size: 24px;
+}
+
+/* pseudo class */
+textarea[type="text"]:hover {
+  color: lightgreen;
+  font-size: 36px;
+}
+
+/* pseudo element */
+a::before {
+  content: ">>";
+  color: brown;
+}

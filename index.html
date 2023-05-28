@@ -6,22 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./styles.css" />
-    <title>ZHU Website</title>
+    <title>ZHU的網站</title>
   </head>
   <body>
-    <header class="p-2 bg-dark text-white fs-3">
+    <header class="p-2 bg-dark text-white fs-3 fixed-top">
       <div class="container">
         <ul
           class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
         >
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a href="#" class="nav-link px-2 text-white">Home</a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a href="#" class="nav-link px-2 text-white">關於我</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-white">作品集</a>
+            <a href="#portfolio" class="nav-link px-2 text-white">作品集</a>
           </li>
         </ul>
       </div>
@@ -29,18 +29,29 @@
 
     <main>
       <section id="about" class="py-5">
-        <div class="container">
-          <h2>About Me</h2>
-          <p>
-            我是朱誌威，24歲，畢業於國立勤益科技大學資工系，個性隨和，待人和善，樂於學習新事物，責任感重，大學時參加學生會擔任社團部部長，參與或聯合舉辦多數活動，在校曾選修人工智慧、機器學習，製作專題時接觸過Kotlin、Python、Java等語言，並曾自學Swift，對於軟體工程有著極大的興趣，歡迎大家一起技術交流。從接觸程式設計以來就覺得後端技能是各種軟體開發都需要用到的重要技能，且對於後端領域的未來性及發展性看好，促使我想要投身進入後端領域，並期許自己能夠在該領域成為專家，未來希望能夠運用自身的後端技術獨立完成專案並且架設屬於自己的網站，同時運用自身的經驗解決問題。
-          </p>
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-md-3">
+              <img
+                style="height: 400px"
+                src="./img/1.jpg"
+                alt="Personal Image"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-md-9 py-2">
+              <h2 style="font-size: 2.5rem">關於我</h2>
+              <p style="font-size: 1.5rem">
+                我是朱誌威，24歲，畢業於國立勤益科技大學資工系，個性隨和，待人和善，樂於學習新事物，責任感重，大學時參加學生會擔任社團部部長，參與或聯合舉辦多數活動，在校曾選修人工智慧、機器學習，製作專題時接觸過Kotlin、Python、Java等語言，並曾自學Swift，對於軟體工程有著極大的興趣，歡迎大家一起技術交流。從接觸程式設計以來就覺得後端技能是各種軟體開發都需要用到的重要技能，且對於後端領域的未來性及發展性看好，促使我想要投身進入後端領域，並期許自己能夠在該領域成為專家，未來希望能夠運用自身的後端技術獨立完成專案並且架設屬於自己的網站，同時運用自身的經驗解決問題。
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
       <section id="portfolio" class="py-5 bg-light">
         <div class="container">
-          <h2>Portfolio</h2>
-          <p>Here are some of my works:</p>
+          <h2 style="font-size: 2.5rem">作品集</h2>
           <div class="row">
             <div class="col-md-4 mb-4">
               <div class="card">
@@ -48,9 +59,9 @@
                 <div class="card-body">
                   <h5 class="card-title">Project 1</h5>
                   <p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    實作HTML跟CSS的簡單作品，裡面包含基本HTML標籤及CSS簡單的應用。
                   </p>
-                  <a href="">點我前往</a>
+                  <a href="./Project/website-pratice/index.html">點我前往</a>
                 </div>
               </div>
             </div>
@@ -60,10 +71,10 @@
                 <div class="card-body">
                   <h5 class="card-title">Project 2</h5>
                   <p class="card-text">
-                    Sed commodo tellus nec sagittis vestibulum.
+                    應用前面所學，第一個做的完整網站，有包含一些簡單的JavaScript。
                   </p>
 
-                  <a href="">點我前往</a>
+                  <a href="./Project/website-project 1/">點我前往</a>
                 </div>
               </div>
             </div>
@@ -72,12 +83,8 @@
                 <img src="./img/p3.jpg" class="card-img-top" alt="Image 3" />
                 <div class="card-body">
                   <h5 class="card-title">Project 3</h5>
-                  <p class="card-text">
-                    Vivamus aliquet pulvinar facilisis. Duis dictum, ligula in
-                    mattis fringilla, lacus leo lacinia purus, eu aliquam lectus
-                    risus vitae nunc.
-                  </p>
-                  <a href="">點我前往</a>
+                  <p class="card-text">這是一個一頁式的日本旅遊網站</p>
+                  <a href="./Project/website-project 2/">點我前往</a>
                 </div>
               </div>
             </div>

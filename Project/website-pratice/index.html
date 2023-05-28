@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--lang 屬性設定網頁的語言-->
+<!-- ctrl / 快速commit -->
+<html lang="zh-Hant">
+  <head>
+    <!-- 
+    charset = 編碼設定
+    http-equiv = 定義瀏覽器與伺服器屬性
+    viewport = 用於提供關於如何顯示網頁的資訊給網頁瀏覽器和其他裝置
+    descriotion = 對網頁的簡短介紹
+    robots = 用於告訴搜尋引擎的機器人是否應該掃描該網頁，以及如何處理該網頁的內容。
+    authorr = 作者
+    base target = 用於設定超連結如何打開
+    title = 網頁標題 
+  -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="descriotion" content="這是一個簡單講述故宮博物院資訊的網站" />
+    <meta name="robots" content="index,folllow" />
+    <meta name="googlebot" content="index,folllow" />
+    <meta name="author" content="ZHU" />
+    <base target="_blank" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
+      rel="stylesheet"
+    />
+    <title>故宮博物院資訊網</title>
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <h1 class="title">國立故宮博物館</h1>
+    <h2 id="id-selector">簡介:</h2>
+    <p class="class-selector">
+      國立故宮博物院，簡稱<strong>臺灣故宮</strong>或臺北故宮（博物院），別名中山博物院，為臺灣最具規模的博物館以及臺灣八景之一，也是古代中國藝術史與漢學研究機構。館舍位於臺北市士林區，一年可接待超過614萬人次的參訪旅客，曾位列2015年全球參觀人數第六多的藝術博物館。
+      國立故宮博物院是隸屬於中華民國行政院的中央二級機關，故宮院長為特任官，視同部會首長。它的前身是成立於京兆地方（今北京）紫禁城外廷的古物陳列所，1925年10月10日在紫禁城內廷另外組織了故宮博物院，後來因為抗日戰爭爆發輾轉遷移至南京市和四川省等地，古物陳列所於第二次世界大戰後裁撤併入國立中央博物院籌備處。隨後第二次國共內戰衝突導致時局再陷動盪，包括國立北平故宮博物院在內的6個機構於是在1948年11月10日決定遷往臺灣，幾經改組易名，最終由國立北平故宮博物院和國立中央博物院籌備處合併為國立故宮博物院，1965年11月12日在臺北現址復院開幕。此後，博物館致力打造成為文化創意產業加值應用的虛擬博物館，館舍也歷經多次整修擴建。
+    </p>
+    <p>
+      國立故宮博物院典藏為數近70萬件文物與藝術作品，大部分是原先國立北平故宮博物院、國立中央博物院籌備處和國立北平圖書館等機構所藏來自紫禁城、盛京行宮、避暑山莊、頤和園、靜宜園和國子監等處皇家舊藏；另有部分是編列預算購置，接收自第二次世界大戰結束日本歸還部分文物，以及透過各界捐贈和徵集而來。藏品時間跨度涵蓋新石器時代至今長達8,000年，各類藏品分別交由器物處、書畫文獻處和南院處等3個策展部門管理，當中以長篇銘文的青銅器、古代早期的名家書畫、善本古籍和官窯瓷器等蒐藏最具影響力。展廳內是按照文物類別以編年方式系統性地陳設7,000件展品，器物類展件相隔半年至2年輪換一次，書畫和圖書文獻類展件為每3個月定期更換。
+    </p>
+    <h2>故宮院區</h2>
+    <ul type="circle">
+      <li>北部院區</li>
+      <li>南部院區</li>
+    </ul>
+    <h2>故宮三寶</h2>
+    <ol type="i">
+      <li>范寬〈谿山行旅圖〉</li>
+      <li>李唐〈萬壑松風圖〉</li>
+      <li>郭熙〈早春圖〉</li>
+    </ol>
+    <h2>基礎資訊</h2>
+    <table>
+      <tr>
+        <th colspan="3">國立故宮博物院資訊</th>
+      </tr>
+      <tr>
+        <th>所屬部門</th>
+        <th>員屬</th>
+        <th>授權法源</th>
+      </tr>
+      <tr>
+        <td>行政院</td>
+        <td>502</td>
+        <td>《行政院組織法》 《國立故宮博物院組織法》</td>
+      </tr>
+    </table>
+    <!-- class selector用空白區隔 -->
+    <div class="link">
+      <a class="large-text color-text" href="https://www.npm.gov.tw"
+        >故宮網站連結</a
+      >
+      <a class="large-text color-text" href="./表單練習.html">表單練習</a>
+    </div>
+    <h2>相關連結</h2>
+    <div style="color: black" class="link2">
+      <a style="color: black" href="https://www.google.com">GOOGLE</a>
+      <a style="color: black" href="https://www.yahoo.com">Yahoo</a>
+    </div>
+    <p>
+      <textarea
+        type="text"
+        name="suggestion"
+        id="意見"
+        cols="60"
+        rows="10"
+        placeholder="給網站建議！"
+      ></textarea>
+      <br />
+      <!-- 相對路徑 -->
+      <img
+        width="300"
+        height="200"
+        src="../img/故宮圖片2.jpeg"
+        alt="圖片已死，請上香"
+      />
+      <img
+        width="300"
+        height="200"
+        src="../img/故宮圖片1.jpeg"
+        alt="圖片已死，請上香"
+      />
+      <!-- 絕對路徑 -->
+      <img
+        width="300"
+        height="200"
+        src="https://upload.wikimedia.org/wikipedia/commons/b/b4/NationalPalace_MuseumFrontView.jpg"
+        alt="圖片已死，請上香"
+      />
+    </p>
+  </body>
+</html>
