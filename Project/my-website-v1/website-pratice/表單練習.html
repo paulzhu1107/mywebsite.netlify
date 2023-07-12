@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <meta name="descriotion" content="這是一個簡單的表單網站" />
+    <meta name="robots" content="index,folllow" />
+    <meta name="googlebot" content="index,folllow" />
+    <meta name="authorr" content="ZHU" />
+    <title>表單練習</title>
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- 表單練習 -->
+    <form action="">
+      <!-- text -->
+      <label for="姓名">用戶名：</label>
+      <input
+        type="text"
+        name="user"
+        id="姓名"
+        minlength="5"
+        maxlength="50 "
+        placeholder="請輸入真實姓名"
+        required
+      />
+
+      <!-- password -->
+      <label for="密碼">密碼：</label>
+      <input
+        type="password"
+        name="password"
+        id="密碼"
+        minlength="8"
+        maxlength="40"
+        required
+      />
+
+      <!-- checkbox -->
+      <input type="checkbox" onclick="showPassword" id="show" />Show password
+
+      <!-- radio -->
+      <input
+        type="radio"
+        name="gender"
+        id="male"
+        value="male"
+        checked
+        required
+      />
+      <label for="male">男性</label>
+
+      <input
+        type="radio"
+        name="gender"
+        gender
+        id="female"
+        value="female"
+        required
+      />
+      <label for="female">女性</label>
+      <br />
+      <hr />
+
+      <!-- number -->
+      <label for="年齡">年齡:</label>
+      <input
+        type="number"
+        name="age"
+        id="年齡"
+        min="0"
+        max="125"
+        value="18"
+        step="0.1"
+      />
+
+      <!-- range -->
+      0
+      <input
+        type="range"
+        name="age"
+        id="年齡"
+        min="0"
+        max="125"
+        step="25 "
+      />125
+
+      <!-- datalist -->
+      <label for="地區">地區：</label>
+      <input list="地區列表 " type="text" name="area" id="地區" />
+      <datalist id="地區列表">
+        <option value="台北市">台北市</option>
+        <option value="新北市">新北市</option>
+        <option value="台中市">台中市</option>
+        <option value="台南市">台南市</option>
+        <option value="高雄市">高雄市</option>
+      </datalist>
+      <br />
+      <hr />
+
+      <!-- email -->
+      <label for="信箱">信箱：</label>
+      <input type="email" name="email" id="信箱" required />
+      <input type="checkbox" name="電子報" id="電子報" checked value="訂閱" />
+      <label for="電子報">訂閱電子報</label>
+
+      <!-- select -->
+      <select name="date" id="日期" required>
+        <option></option>
+        <option value="monday">星期一</option>
+        <option value="tuesday">星期二</option>
+        <option value="wenesday">星期三</option>
+        <option value="thursday">星期四</option>
+        <option value="friday">星期五</option>
+        <option value="satarday">星期六</option>
+        <option value="sunday">星期日</option>
+      </select>
+      <br />
+      <hr />
+      <!-- textarea -->
+      <label for="suggestion">給網站的建議：</label>
+      <br />
+      <textarea
+        name="suggestion"
+        id="意見"
+        cols="60"
+        rows="10"
+        placeholder="給網站的建議！"
+      ></textarea>
+      <br />
+
+      <!-- button -->
+      <button type="submit">提交表單</button>
+      <button type="reset">清除</button>
+      <br />
+      <br />
+      <a href="./index.html">回首頁</a>
+      <hr />
+      <p>Paul Zhu 2023 &#169;</p>
+    </form>
+
+    <!-- showPassword script -->
+    <script>
+      let checkbox = document.querySelector("#show");
+      let password = document.querySelector("#密碼");
+      checkbox.addEventListener("check", () => {
+        if (password.type == "password") {
+          password.type = "text";
+        } else {
+          password.type = "password";
+        }
+      });
+    </script>
+  </body>
+</html>

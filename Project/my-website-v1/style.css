@@ -1,0 +1,215 @@
+@font-face {
+  font-family: "my font";
+  src: url("./清松手寫體1.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "my font", DFkai-sb, sans-serif;
+}
+body {
+  background-color: #18232b;
+}
+header {
+  padding: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  border: 2px solid black;
+  background-color: #b9b2ae;
+  color: white;
+  border-radius: 50px;
+}
+header img.pig {
+  padding-left: 4rem;
+}
+header nav {
+  display: flex;
+  flex: 2 1 20px;
+  justify-content: center;
+}
+header nav a {
+  padding: 1rem;
+  text-decoration: none;
+  color: black;
+}
+header nav a:hover {
+  text-decoration: underline;
+}
+header nav ul {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+header nav li {
+  display: inline-block;
+  font-size: 1.5rem;
+  list-style: none;
+  margin: 0 1rem;
+}
+.active:hover {
+  color: rgb(134, 110, 110);
+}
+#aboutme {
+  padding-left: 4rem;
+  padding-top: 0.5rem;
+  font-size: 3rem;
+  color: white;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+main section div.info {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  justify-content: center;
+  /* background-color: #421c0f; */
+}
+main section div.info img {
+  width: 20%;
+  height: 5%;
+  padding-top: 0.5rem;
+  padding-left: 3rem;
+  flex: 1 1 100px;
+}
+main section div.info div.introduce {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 5 1 600px;
+}
+main section div.info div.introduce p {
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  padding-top: 2rem;
+  font-size: 2rem;
+}
+main section.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+#portfolio {
+  padding-left: 4rem;
+  padding-top: 0.5rem;
+  font-size: 3rem;
+  color: white;
+}
+main section div.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+}
+main section div.p1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-self: center;
+  width: 50%;
+}
+main section.portfolio img.p1 {
+  padding: 1rem;
+  padding-left: 4rem;
+  max-width: 70%;
+}
+main section.portfolio p.p1 {
+  padding: 1rem;
+  padding-left: 4rem;
+  font-size: 2rem;
+  width: 70%;
+  color: white;
+}
+main section.portfolio a.p1 {
+  padding: 1rem;
+  padding-left: 4rem;
+  font-size: 1.5rem;
+  color: white;
+}
+main section div.p2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-self: center;
+  width: 50%;
+}
+main section.portfolio img.p2 {
+  padding: 1rem;
+  padding-left: 4rem;
+  max-width: 70%;
+}
+
+main section.portfolio p.p2 {
+  padding: 1rem;
+  padding-left: 4rem;
+  font-size: 2rem;
+  width: 70%;
+  color: white;
+}
+main section.portfolio a.p2 {
+  padding: 1rem;
+  padding-left: 4rem;
+  font-size: 1.5rem;
+  color: white;
+}
+
+main section div.p3 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-self: center;
+  width: 50%;
+}
+main section.portfolio img.p3 {
+  padding: 1rem;
+  padding-left: 4rem;
+  max-width: 70%;
+}
+
+main section.portfolio p.p3 {
+  padding: 1rem;
+  padding-left: 4rem;
+  font-size: 2rem;
+  width: 70%;
+  color: white;
+}
+main section.portfolio a.p3 {
+  padding: 1rem;
+  padding-left: 4rem;
+  font-size: 1.5rem;
+  color: white;
+}
+@media screen and (max-width: 800px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 20vh;
+  }
+  header img.pig {
+    width: 30%;
+  }
+  header nav.navbar {
+    width: 70%;
+  }
+  main section div.portfolio {
+    flex-direction: column;
+  }
+  main section div.p1 {
+    flex-direction: row;
+    width: 100%;
+  }
+  main section div.p2 {
+    flex-direction: row;
+    width: 100%;
+  }
+  main section div.p3 {
+    flex-direction: row;
+    width: 100%;
+  }
+}
